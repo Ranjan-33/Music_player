@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music_player </title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/98958e7b0d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+
+                </div>
+            </nav>
+
+            <img src="./media/images (2).jpeg" class="song_img">
+            <Marquee scrollamount="3">
+                <h1>Tera Fitoor jab chad gaya re... </h1>
+            </Marquee>
+            <p> Arijit Singh</p>
+
+            <audio id="song">
+                <source src="./media/Tera Fitoor _ Arijit Singh _ Himesh Reshammiya _ Genius (2018)(MP3_320K).mp3 "
+                    type="audio/mpeg">
+
+            </audio>
+
+            <input type="range" value="0" id="progress">
+
+
+            <div class="control">
+
+                <div class="backward"> <i class="fa-solid fa-backward"></i> </div>
+                <div onclick="playPause()"> <i class="fa-solid fa-play" id="ctrlIcon"></i> </div>
+                <div class="forward"> <i class="fa-solid fa-forward"></i> </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
